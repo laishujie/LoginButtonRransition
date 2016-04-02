@@ -1,6 +1,6 @@
 # LoginButtonRransition
   <br> loginButton styles 登录过渡式按钮</br>
-  gif：http://119.29.65.138:8080/shareStory/demogif.gif
+  效果展示gif：http://119.29.65.138:8080/shareStory/demogif.gif
 #layout
      <com.login.lai.library.LoginViewLayout
         android:id="@+id/login_view"
