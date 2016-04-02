@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.login.lai.loginbuttonrransition.MainActivity">
+
+    <com.login.lai.library.LoginViewLayout
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="150dip"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="25dip"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </com.login.lai.library.LoginViewLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:onClick="onOpen"
+        android:text="open" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="选择你的按钮颜色\nSelect button color"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_margin="5dip"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_default"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="btnChoose"
+                android:text="蓝色\n(default)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_pink"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="btnChoose"
+                android:text="粉红色\n(Pink)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_gray"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@color/dialog_text_color"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="btnChoose"
+                android:text="灰色\n(gray)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_black"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="btnChoose"
+                android:text="黑色\n(black)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="按钮的颜色(ButtonColor):"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_margin="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:text="选择你的进度条颜色\nSelect progress bar color"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_margin="5dip"
+            android:background="@color/colorPrimary" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bar_default"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:onClick="barChoose"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:button="@null"
+                android:gravity="center"
+                android:text="蓝色\n(default)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bar_pink"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:onClick="barChoose"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="粉红色\n(Pink)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bar_gray"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@color/dialog_text_color"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="barChoose"
+                android:text="灰色\n(gray)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bar_black"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:onClick="barChoose"
+                android:background="#000000"
+                android:button="@null"
+                android:gravity="center"
+                android:text="黑色\n(black)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bar_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="进度条的颜色(progressBar Color):"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+</RelativeLayout>
